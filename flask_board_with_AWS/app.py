@@ -14,7 +14,7 @@ def create_upload_folder_if_not_exists():
         os.makedirs(upload_folder)
 
 def connectsql():
-    conn = pymysql.connect(host='localhost', user = 'root', passwd = 'root', db = 'userlist', charset='utf8')
+    conn = pymysql.connect(host='dd-database.c2u3lanlszlp.ap-southeast-2.rds.amazonaws.com', user = 'DDadmin', passwd = 'Ekwlagodyd666!', db = 'userlist', charset='utf8')
     return conn
 
 @app.route('/')
