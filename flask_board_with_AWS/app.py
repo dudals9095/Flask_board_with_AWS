@@ -272,4 +272,5 @@ def regist():
         return render_template('regist.html')        
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    #app.run(debug=True)
+    app.run('http://dd-lb-1312077040.ap-southeast-2.elb.amazonaws.com/', port=80, debug=True)
